@@ -9,5 +9,5 @@ export default function Contacts() {
 
       <p className="text-lg font-medium">📧 anto.waweru2030@gmail.com</p>
     </div>
-  );
+  )
 }

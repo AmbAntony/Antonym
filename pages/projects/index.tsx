@@ -1,16 +1,42 @@
+"use client";
+
 export default function Projects() {
   return (
-    <div>
-      <h1 className="text-4xl font-semibold mb-6">My Projects</h1>
-      <p className="text-white mb-4">
-        Here are some of the projects I've worked on:
-      </p>
+    <section className="px-6 py-10">
 
-      <ul className="space-y-4 text-white">
-        <li className="border p-4 rounded-md">Project One – Description goes here.</li>
-        <li className="border p-4 rounded-md">Project Two – Description goes here.</li>
-        <li className="border p-4 rounded-md">Project Three – Description goes here.</li>
-      </ul>
-    </div>
+      <div className="flex gap-6">
+        {/* Image Link 1 */}
+        <a
+          href="https://marini-shop.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group"
+        >
+          <img
+            src="/image1.png" // <-- replace with your actual image
+            alt="Project 1"
+            className="w-[300px] h-[390px] rounded-xl shadow-md
+                       transition-transform duration-300
+                       group-hover:-translate-y-2 group-hover:scale-105"
+          />
+        </a>
+
+        {/* Image Link 2 */}
+        <a
+          href="https://tikohub.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group"
+        >
+          <img
+            src="/image2.png" // <-- replace with your actual image
+            alt="Project 2"
+            className="w-[300px] h-[400px] rounded-xl shadow-md
+                       transition-transform duration-300
+                       group-hover:-translate-y-2 group-hover:scale-105"
+          />
+        </a>
+      </div>
+    </section>
   );
 }
