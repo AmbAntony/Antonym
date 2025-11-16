@@ -2,7 +2,7 @@
 
 export default function Projects() {
   return (
-    <section className="px-6 py-10">
+    <section className="px-6 py-5">
 
       <div className="flex gap-6">
         {/* Image Link 1 */}
@@ -13,12 +13,13 @@ export default function Projects() {
           className="group"
         >
           <img
-            src="/image1.png" // <-- replace with your actual image
+            src="/image1.png" 
             alt="Project 1"
-            className="w-[300px] h-[390px] rounded-xl shadow-md
+            className="w-[200px] h-[300px] rounded-xl shadow-md
                        transition-transform duration-300
                        group-hover:-translate-y-2 group-hover:scale-105"
           />
+          <p className="mt-2 text-center font-serif text-blue-100">Marini Shop</p>
         </a>
 
         {/* Image Link 2 */}
@@ -29,14 +30,15 @@ export default function Projects() {
           className="group"
         >
           <img
-            src="/image2.png" // <-- replace with your actual image
+            src="/image2.png" 
             alt="Project 2"
-            className="w-[300px] h-[400px] rounded-xl shadow-md
+            className="w-[200px] h-[300px] rounded-xl shadow-md
                        transition-transform duration-300
                        group-hover:-translate-y-2 group-hover:scale-105"
           />
+          <p className="mt-2 text-center font-serif text-blue-100">Ticket Hub</p>
         </a>
       </div>
     </section>
-  );
+  )
 }

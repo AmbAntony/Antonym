@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ReactNode } from "react";
+import { FaTwitter, FaLinkedin } from "react-icons/fa";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
@@ -10,7 +11,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <div>
             {/* Logo */}
             <h1 className="mt-9 text-4xl font-bold tracking-tight leading-none">
-              AN<br />..TONY
+              AN<br />..<span className="text-blue-300">TONY</span>
             </h1>
 
             {/* Navigation */}
@@ -54,9 +55,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           </div>
           {/* Social icons placeholder */}
           <div className="flex gap-4 text-xl">
-            <Link href="#">I</Link>
-            <Link href="#">X</Link>
-            <Link href="#">@</Link>
+            <Link href="https://x.com/itsmunene_" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-black transition">
+              <FaTwitter />
+            </Link>
+            <Link href="https://linkedin.com/in/antony-dev-munene" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-black transition">
+              <FaLinkedin />
+            </Link>
           </div>
         </aside>
 

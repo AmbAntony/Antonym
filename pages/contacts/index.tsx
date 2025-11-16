@@ -7,7 +7,7 @@ export default function Contacts() {
         Feel free to reach out for collaborations or opportunities.
       </p>
 
-      <p className="text-lg font-medium">📧 anto.waweru2030@gmail.com</p>
+      <p className="text-lg text-blue-300 font-medium">📧 statesentreprises@gmail.com</p>
     </div>
   )
 }
