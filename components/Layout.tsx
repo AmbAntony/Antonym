@@ -10,9 +10,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <aside className="w-64 border-r fixed left-0 top-0 h-full bg-white flex flex-col justify-between p-6">
           <div>
             {/* Logo */}
-            <h1 className="mt-9 text-4xl font-bold tracking-tight leading-none">
-              AN<br />..<span className="text-blue-300">TONY</span>
-            </h1>
+            <Link href="/" className="hover:opacity-80 transition">
+              <h1 className="mt-9 text-4xl font-bold tracking-tight leading-none">
+                AN<br />..<span className="text-blue-300">TONY</span>
+              </h1>
+            </Link>
 
             {/* Navigation */}
             <nav className="mt-36 space-y-6 text-lg">
